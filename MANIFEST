@@ -1,4 +1,4 @@
 MANIFEST
 Makefile.PL
-Pick.pm
-test.pl
+lib/Tie/Pick.pm
+t/000_tests.t
