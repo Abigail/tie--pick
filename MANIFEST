@@ -1,4 +1,6 @@
 MANIFEST
+Changes
+README
 Makefile.PL
 lib/Tie/Pick.pm
 t/000_tests.t
