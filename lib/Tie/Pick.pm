@@ -1,19 +1,12 @@
 package Tie::Pick;
 
-#
-# $Id: Pick.pm,v 1.1 1999/07/20 06:55:25 abigail Exp abigail $
-#
-# $Log: Pick.pm,v $
-# Revision 1.1  1999/07/20 06:55:25  abigail
-# Initial revision
-#
-#
+use 5.006;
 
 use strict;
+use warnings;
+no  warnings 'syntax';
 
-use vars qw /$VERSION/;
-
-$VERSION = '$Revision: 1.1 $' =~ /([\d.]+)/;
+our $VERSION = '2009040401';
 
 
 sub TIESCALAR {
@@ -43,7 +36,7 @@ sub STORE     {
 }
 
 
-"End of Tie::Pick";
+1;
 
 __END__
 
@@ -119,23 +112,35 @@ R. Salfi: I<COMPSTAT 1974>. Vienna: 1974, pp 28 - 35.
 
 =back
 
-=head1 REVISION HISTORY
-
-    $Log: Pick.pm,v $
-    Revision 1.1  1999/07/20 06:55:25  abigail
-    Initial revision
-
+=head1 DEVELOPMENT
+ 
+The current sources of this module are found on github,
+L<< git://github.com/Abigail/tie--pick.git >>.
 
 =head1 AUTHOR
-
-This package was written by Abigail.
+    
+Abigail L<< <cpan@abigail.be> >>.
 
 =head1 COPYRIGHT and LICENSE
 
-This package is copyright 1999 by Abigail.
+Copyright (C) 1999, 2009 by Abigail
 
-This program is free and open software. You may use, copy, modify,
-distribute and sell this program (and any modified variants) in any way
-you wish, provided you do not restrict others to do the same.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 =cut
